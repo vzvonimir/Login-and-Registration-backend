@@ -3,7 +3,7 @@ version: '3'
 services:
   postgres:
     image: postgres:latest
-    container_name: my-postgres-container
+    container_name: postgres-container
     environment:
       POSTGRES_DB: registration
       POSTGRES_USER: postgres
@@ -16,7 +16,7 @@ services:
 
   backend:
     image: zvone99/login-and-registration
-    container_name: my-backend-container
+    container_name: backend-container
     ports:
       - "8080:8080"
     environment:
